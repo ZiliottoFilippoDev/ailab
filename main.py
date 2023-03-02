@@ -35,15 +35,15 @@ def write_text(text,name, time_sleep=0.4, first_sleep = 5, speaker=True):
 def on_click_name(text, name, time_sleep=0.4, answer = False):
     if not answer:
         gen_text = generate_text(None, name, introduction=True)
+        write_text(gen_text, name)
         audio_process = Process(target=reproduce_voice, args=(gen_text, name),)
         audio_process.start()
-        write_text(gen_text, name)
         audio_process.join()
     else:
         gen_text = generate_text(text, name, introduction=False)
+        write_text(gen_text, name)
         audio_process = Process(target=reproduce_voice, args=(gen_text, name),)
         audio_process.start()
-        write_text(gen_text, name)
         audio_process.join()
 
 
