@@ -4,11 +4,8 @@ from io import BytesIO
 import pyttsx3
 from text import answers, characters
 from multiprocessing import Process
-import time
 import speech_recognition as sr
-from PIL import Image
 from functions import generate_text
-from st_clickable_images import clickable_images
 
 def reproduce_voice(text, name):
     engine = pyttsx3.init()
