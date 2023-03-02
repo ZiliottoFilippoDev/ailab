@@ -1,6 +1,7 @@
 import openai
 import os
 import requests
+import streamlit as st
 
 openai_api_key = st.secrets['openai']["OPENAI_API_KEY"]
 openai.api_key = openai_api_key
