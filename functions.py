@@ -2,7 +2,8 @@ import openai
 import os
 import requests
 
-openai.api_key = "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"
+openai_api_key = st.secrets['openai']["OPENAI_API_KEY"]
+openai.api_key = openai_api_key
 
 def generate_text(prompt=None, character='Napoleon', introduction = False):
     if introduction:
