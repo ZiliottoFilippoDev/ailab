@@ -3,3 +3,7 @@ libasound-dev
 portaudio19-dev
 python3-pyaudio
 
+pip install PyAudio
+pip3 install PyAudio
+python -m pip install PyAudio
+python -m pip3 install PyAudio
