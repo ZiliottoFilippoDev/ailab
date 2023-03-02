@@ -2,7 +2,7 @@ import openai
 import os
 import requests
 
-openai.api_key = os.environ.get("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"  )
+openai.api_key = "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"
 
 def generate_text(prompt=None, character='Napoleon', introduction = False):
     if introduction:
